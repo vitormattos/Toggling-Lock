@@ -22,8 +22,8 @@ Create file `/usr/local/bin/gnome-screensaver-unlock` with the follow content re
 #!/bin/sh
 su <usrename> -c "DISPLAY=:0 XAUTHORITY=/home/<usrename>/.Xauthority /usr/bin/gnome-screensaver-command -d"
 ```
-Grant exec permissoin to files lock and unlock:
+Grant exec permission to files lock and unlock:
 ```bash
 sudo chmod +x /usr/local/bin/gnome-screensaver-lock /usr/local/bin/gnome-screensaver-unlock
 ```
-Now, test plugging and umplugging your device to your computer and... be happy!
+Now, test plugging and unplugging your device to your computer and... be happy!
